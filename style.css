@@ -11,7 +11,6 @@ body {
     font-style: normal;
 }
 
-.container {}
 
 header {
     padding: 20px 100px;
@@ -56,8 +55,8 @@ header .banner img {
     width: 100%;
 }
 
-main{
-}
+main {}
+
 /*      */
 main .first {
     margin: 25px auto;
@@ -65,16 +64,18 @@ main .first {
     padding: 0px 150px;
 }
 
-main .first .first-img{
+main .first .first-img {
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
-main .first .first-img>img{
+
+main .first .first-img>img {
     width: 100%;
 }
-main .first .first-text{
+
+main .first .first-text {
     width: 50%;
     padding: 85px 60px;
 }
@@ -87,35 +88,64 @@ main .second {
     padding: 0px 100px;
 }
 
-main .second .second-text{
+main .second .second-text {
     width: 50%;
     padding: 0px 31px;
     padding-top: 17px;
 }
-main .second .second-text p{
+
+main .second .second-text {}
+
+main .second .second-text p {
     font-size: 1rem;
     font-weight: normal;
 }
+
 main .second .second-text .content-1,
 .content-2,
 .content-3,
-.content-4
-{
+.content-4 {
     border-radius: 8px;
-    box-shadow: 1px 1px 10px gainsboro ;
+    box-shadow: 1px 1px 10px gainsboro;
     padding: 10px 15px;
     margin: 10px 0px;
 }
 
 
-main .second .second-img{
+main .second .second-img {
     width: 50%;
+    position: relative;
 }
 
 
-main .second .second-img>img{
+main .second .second-img>img {
     width: 100%;
+    padding-left: 40px;
 }
+
+main .second-img .img-contant {
+    position: absolute;
+    bottom: 10px;
+  left: -17px;
+  width: 204px;
+  height: 120px;
+  padding: 26px;
+  color: #fff;
+    text-align: center;
+    background-color: #ff900e;
+}
+
+
+main .second-img .img-contant>h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main .img-contant>p {
+    font-size: 1.5rem;
+}
+
+
 
 /*          */
 
@@ -123,11 +153,12 @@ main .three {
     margin: 40px auto;
     padding: 0px 100px;
 }
-main .three .three-text{
+
+main .three .three-text {
     width: 542px;
 }
 
-main .three .box-area{
+main .three .box-area {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -136,8 +167,7 @@ main .three .box-area{
 main .three .box-area .itam-1,
 .itam-2,
 .itam-3,
-.itam-4
-{
+.itam-4 {
     text-align: center;
     width: 241px;
     height: 241px;
@@ -153,25 +183,25 @@ main .four {
     padding: 0px 100px;
 }
 
-main .four .four-text{
+main .four .four-text {
     width: 542px;
     margin: auto;
     text-align: center;
 }
 
-main .four .box-img{
+main .four .box-img {
     display: flex;
     justify-content: space-between;
     margin: 50px 0px;
 }
 
-.footer{
+.footer {
     padding: 20px 0px;
     text-align: center;
     background-color: antiquewhite;
 }
 
-.footer p{
+.footer p {
     font-size: 20px;
 }
 
@@ -193,15 +223,171 @@ main .four .box-img{
     background-color: #FF900E;
 }
 
-h3{
+h3 {
     font-size: 2.75rem;
     font-weight: bold;
     padding: 10px 0px;
 }
 
 
-h6{
+h6 {
     font-size: 1.25rem;
     padding: 10px 0px;
 }
 
+
+
+
+
+@media screen and (max-width: 576px) {
+    header {
+        padding:20px 0px;
+      }
+      .nev {
+        flex-direction: column;
+        row-gap: 15px;
+      }
+      header .head-contant {
+        width: auto;
+        padding: 0px 20px;
+        text-align: center;
+      }
+
+      header .head-contant > h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 20px 0px;
+      }
+
+      main .first {
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+      }
+
+      main .first .first-img {
+        width: 100%;
+      }
+      main .first .first-text {
+        width: 100%;
+        padding: 60px 4px;
+      }
+
+      main .second {
+        padding: 0px;
+        flex-direction: column;
+      }
+      main .second .second-text {
+        width: 100%;
+        padding: 0px 31px;
+          padding-top: 0px;
+        padding-top: 0px;
+      }
+
+      main .second .second-text .content-1, .content-2, .content-3, .content-4 {
+        border-radius: 8px;
+        box-shadow: 1px 1px 10px gainsboro;
+        padding: 10px 15px;
+        margin-top: 25px;
+        
+      }
+      main .second .second-img {
+        width: 100%;
+      }
+
+      main .second .second-img > img {
+        width: 100%;
+        padding-left: 0px;
+      }
+
+      main .three {
+        margin: 40px auto;
+        padding: 0px 20px;
+      }
+      main .three .three-text {
+        width: auto;
+      }
+
+      main .three .box-area {
+        flex-direction: column;
+        row-gap: 25px;
+      }
+
+      main .three .box-area .itam-1, .itam-2, .itam-3, .itam-4 {
+        width: 464px;
+        height: 241px;
+      }
+
+      main .four {
+        margin: 40px auto;
+        padding: 0px 20px;
+      }
+
+      main .four .four-text {
+        width: auto;
+      }
+
+      main .four .box-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+
+      }
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 850px) {
+    
+    header {
+        padding:20px 0px;
+      }
+
+      .nev {
+        justify-content: space-evenly;
+      }
+      header .head-contant {
+        width: auto;
+        padding:0px 90px;
+      }
+
+      header .head-contant > h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 20px 0px;
+      }
+
+      main .first {
+        margin: 25px auto;
+        display: flex;
+        padding: 0px 20px;
+      }
+
+      main .second {
+        padding: 0px;
+      }
+
+      main .three {
+        margin: 40px auto;
+        padding: 0px 20px;
+      }
+
+      main .three .box-area {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 5px;
+      }
+
+      main .three .box-area .itam-1, .itam-2, .itam-3, .itam-4 {
+        width: 400px;
+        height: 241px;
+      }
+
+      main .four {
+        margin: 40px auto;
+        padding: 0px 20px;
+      }
+
+
+}
