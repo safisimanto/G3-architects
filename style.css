@@ -83,7 +83,6 @@ main .first .first-text{
 
 main .second {
     margin: 25px auto;
-    border: 1px solid green;
     display: flex;
     padding: 0px 100px;
 }
@@ -118,11 +117,63 @@ main .second .second-img>img{
     width: 100%;
 }
 
+/*          */
 
+main .three {
+    margin: 40px auto;
+    padding: 0px 100px;
+}
+main .three .three-text{
+    width: 542px;
+}
 
+main .three .box-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
+main .three .box-area .itam-1,
+.itam-2,
+.itam-3,
+.itam-4
+{
+    text-align: center;
+    width: 241px;
+    height: 241px;
+    padding: 47px;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+}
 
+/*              */
 
+main .four {
+    margin: 40px auto;
+    padding: 0px 100px;
+}
+
+main .four .four-text{
+    width: 542px;
+    margin: auto;
+    text-align: center;
+}
+
+main .four .box-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.footer{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.footer p{
+    font-size: 20px;
+}
 
 
 
