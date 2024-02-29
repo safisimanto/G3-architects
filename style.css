@@ -56,6 +56,70 @@ header .banner img {
     width: 100%;
 }
 
+main{
+}
+/*      */
+main .first {
+    margin: 25px auto;
+    display: flex;
+    padding: 0px 150px;
+}
+
+main .first .first-img{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+main .first .first-img>img{
+    width: 100%;
+}
+main .first .first-text{
+    width: 50%;
+    padding: 85px 60px;
+}
+
+/*          */
+
+main .second {
+    margin: 25px auto;
+    border: 1px solid green;
+    display: flex;
+    padding: 0px 100px;
+}
+
+main .second .second-text{
+    width: 50%;
+    padding: 0px 31px;
+    padding-top: 17px;
+}
+main .second .second-text p{
+    font-size: 1rem;
+    font-weight: normal;
+}
+main .second .second-text .content-1,
+.content-2,
+.content-3,
+.content-4
+{
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px gainsboro ;
+    padding: 10px 15px;
+    margin: 10px 0px;
+}
+
+
+main .second .second-img{
+    width: 50%;
+}
+
+
+main .second .second-img>img{
+    width: 100%;
+}
+
+
+
 
 
 
@@ -71,7 +135,7 @@ header .banner img {
     cursor: pointer;
     padding: 10px;
     color: #fff;
-    margin: 20px;
+    margin: 20px 0px;
     border-radius: 8px;
     font-size: 1.25rem;
     border: 2px solid #FF900E;
@@ -81,5 +145,12 @@ header .banner img {
 h3{
     font-size: 2.75rem;
     font-weight: bold;
+    padding: 10px 0px;
+}
+
+
+h6{
+    font-size: 1.25rem;
+    padding: 10px 0px;
 }
 
